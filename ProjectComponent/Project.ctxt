@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.params=projectName\ projectDescription\ sector
+comment0.target=Project(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Create\ contructor\ project\ with\ project\ name\ and\ project\ description\r\n\ @param\ project\ name\ and\ projectDescription\ \r\n\ \r\n
+comment1.params=projectName\ projectDescription
+comment1.target=Project(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Create\ contructor\ with\ project\ name,\ description\r\n\ @param\ projectName,\ projectDescription\r\n\ \r\n
+comment2.params=projectName\ projectDescription
+comment2.target=java.lang.String\ addProject(java.lang.String,\ java.lang.String)
+comment2.text=\r\n\ Add\ a\ project\ Name\ and\ Desciption\ \r\n\ @param\ project\ name\ and\ project\ description\r\n\ @return\ "Failure"\ or\ "success"\r\n
+comment3.params=projectName\ projectDescription
+comment3.target=void\ editProject(java.lang.String,\ java.lang.String)
+comment3.text=\r\n\ Edit\ roject\ name\ and\ desciption\ \r\n\ @param\ project\ name\ and\ description\r\n\ @return\r\n
+comment4.params=
+comment4.target=DocumentComponent.ProjectSchedule\ establishProjectSchedule()
+comment5.params=
+comment5.target=DocumentComponent.ProjectBudget\ establishProjectBudget()
+comment6.params=
+comment6.target=void\ prepareDocument()
+comment7.params=
+comment7.target=void\ recordMonthlyExpenditureReport()
+comment8.params=
+comment8.target=void\ recordQuarterlyProgressReport()
+comment9.params=
+comment9.target=java.lang.String\ toString()
+comment9.text=\r\n\ Display\ the\ contents\ of\ the\ project\ \r\n
+numComments=10
