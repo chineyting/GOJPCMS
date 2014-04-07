@@ -23,15 +23,26 @@ public class ProjectBudget eextend Document
     }
 
   
-  
+  //set Budget
     public int setBudget(int y)
     {
         
          budg = y;
+         
     }
+    
+    //update Budget
     
     public void updateBudget(int y)
     {
       newBudg = int y;
+      budg = newBudg;
+    
+    }
+    
+    //return Budget
+    public void getBudet()
+    {
+        return budg;
     }
 }
