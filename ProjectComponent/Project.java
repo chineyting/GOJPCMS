@@ -3,7 +3,6 @@ import DocumentComponent.*;
 
 import java.util.*;
 
-
 /**
  * Write a description of class Project here.
  * 
@@ -12,16 +11,16 @@ import java.util.*;
  */
 public class Project
 {
-    //decalarations 
+    //declarations 
     AclComponent.authentication user; //object of AclComponent 
-    
+
     public int projectid;
     public String projectName;
     public String sector; 
     public String projectDesciption;
-    
+
     //added 
-     private ProjectBudget projectBudget;
+    private ProjectBudget projectBudget;
     private ProjectSchedule projectSchedule;
     private ProjectPlan projectPlan;
     private Costing costing;
@@ -31,11 +30,11 @@ public class Project
     private QuarterlyProgressReport quarterlyProgressReport;
     private FinalReport finalReport;
     private ExPostEvaluation exPostEvaluation;
- /**
-  * Create contructor project with project name and project description
-  * @param project name and projectDescription 
-  * 
-  */   
+    /**
+     * Create contructor project with project name and project description
+     * @param project name and projectDescription 
+     * 
+     */   
     public Project(String projectName, String projectDescription,String sector )
     {
         //constructor code
@@ -47,24 +46,21 @@ public class Project
         projectDescription=projectDescription;
         sector=sector;
     }
+
     
-   
-    
-    
-/***
- * Add a project Name and Desciption 
- * @param project name and project description
- * @return "Failure" or "success"
- */
+    /***
+     * Add a project Name and Desciption 
+     * @param project name and project description
+     * @return "Failure" or "success"
+     */
     public String addProject(String projectName, String projectDescription)
     {
         if (user.hasAccess())
         {
             //create the project
 
-           // Project project = new Project(projectName, projectDescription);
+            // Project project = new Project(projectName, projectDescription);
 
-             
 
             //code to pass the information to the persistence layer
 
@@ -75,58 +71,47 @@ public class Project
             return "FAILURE";
         }
     }
-    
+
     /**
-    * Edit roject name and desciption 
-    * @param project name and description
-    * @return
-    */
+     * Edit roject name and desciption 
+     * @param project name and description
+     * @return
+     */
     public void editProject(String projectName,String projectDescription)
     {
         projectName=projectName;
         projectDescription=projectDescription;   
-        
+
     }
+
     
-    
-    
-  //develop schedule
+    // code added here  
     public ProjectSchedule establishProjectSchedule()
     {
         // put your code here
         return new ProjectSchedule();
     }
-    
-    //develop budget
+
     public ProjectBudget establishProjectBudget()
     {
         // put your code here
         return new ProjectBudget();
     }
-    
-    //create document
+
     public void prepareDocument(){
-        
-        
+
     }
-    
-    //record monthly expenditure
     public void recordMonthlyExpenditureReport(){
-        
     }
-    
-    //record quarterly expenditure
     public void recordQuarterlyProgressReport(){
-        
     }
-    
     
     /**
      * Display the contents of the project 
      */
     public String  toString()
     {
-      
+
         return ("Project Name:"+projectName+"\tProject Description:"+projectDesciption); //will be updated in version 2
     }
 }
