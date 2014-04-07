@@ -15,21 +15,26 @@ public class FinalReport
     /**
      * Constructor for objects of class FinalReport
      */
-    public FinalReport()
+    public FinalReport(String docID, String docName)
     {
         // initialise instance variables
-        x = 0;
+        super(docID,docName);
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+// prints document
+    public void printDetails()
     {
-        // put your code here
-        return x + y;
+    }
+  
+  //return document name  
+    public getDocName(String docName)
+    {
+        return docName;
+    }
+    
+    //returns document ID
+    public String getDocId(String docID)
+    {
+        return docID;
     }
 }
