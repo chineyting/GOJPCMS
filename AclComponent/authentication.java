@@ -9,6 +9,7 @@ package AclComponent;
  */
 public class authentication
 {
+    // gives access to user if he/she is authorized
     public boolean hasAccess()
     {
         
