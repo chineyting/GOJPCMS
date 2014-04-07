@@ -10,20 +10,22 @@ package ProjectComponent;
 public class TechnicalAssistanceProject extends Project
 {
     // instance variables - replace the example below with your own
-    private Consultant consultant;
+    private List<Consultant> consultants = new ArrayList<Consultant>();
 
     /**
      * Constructor for objects of class TechnicalAssistanceProject
      */
     public TechnicalAssistanceProject (String projectName, String projectDescription,String sector,Consultant cons)
     {
-         super(projectName,projectDescription,sector);
-        this.consultant = cons;
+        super(projectName,projectDescription,sector);
+        this.consultants.add(cons);
     }
 
     
     public void addConsultant(Consultant cons)
     {
+        this.consultants.add(cons);
+        
         
     }
 }
