@@ -32,6 +32,6 @@ public class ProjectBudget eextend Document
     
     public void updateBudget(int y)
     {
-      newBudg = int y  
+      newBudg = int y;
     }
 }
