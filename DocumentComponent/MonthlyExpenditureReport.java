@@ -20,7 +20,7 @@ public class MonthlyExpenditureReport
         this.totalExpenditure = te;
     }
 
-   
+ //updates current expenditure  
     public void updateTotalExpenditure(int newTotal)
     {
        this.totalExpenditure = newTotal;
