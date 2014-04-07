@@ -7,29 +7,31 @@ package DocumentComponent;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ProjectBudget
+public class ProjectBudget eextend Document
 {
     // instance variables - replace the example below with your own
-    private int x;
+    public int budg, newBudg;
+    
 
     /**
      * Constructor for objects of class ProjectBudget
      */
-    public ProjectBudget()
+    public ProjectBudget(String docID,String docName)
     {
         // initialise instance variables
-        x = 0;
+        super(docID,docName)
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+  
+  
+    public int setBudget(int y)
     {
-        // put your code here
-        return x + y;
+        
+         budg = y;
+    }
+    
+    public void updateBudget(int y)
+    {
+      newBudg = int y  
     }
 }
