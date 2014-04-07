@@ -19,21 +19,27 @@ public class Document
         this.docName=docName;
     }
 
+// return Document ID
     public String getDocId(){
         return this.docID;
     }
 
+// Prints document
     public void printDoc(){}
 
+//returns information on Document
     public String toString()
     {
         return info;
     }
 
+//Saves document
     public void saveDoc(){}
 
+//deletes document
     public void deleteDoc(){}
 
+//returns document name
     public String getDocName(){
         return docName;
     }
