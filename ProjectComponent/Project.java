@@ -42,24 +42,13 @@ public class Project
         int min=1000;
         int max=9999;
         Random rand = new Random();
-        projectid= rand.nextInt((max - min) + 1) + min;
+        projectid= rand.nextInt((max - min) + 1) + min; //assign a random numerical value to the project id each time the object project is called 
         projectName=projectName;
         projectDescription=projectDescription;
         sector=sector;
     }
     
-   /**
-    * Create contructor with project name, description
-    * @param projectName, projectDescription
-    * 
-    */
-   public Project(String projectName, String projectDescription)
-    {
-        //constructor code
-        projectName=projectName;
-        projectDescription=projectDescription;
-       
-    }
+   
     
     
 /***
