@@ -21,11 +21,18 @@ public class TechnicalAssistanceProject extends Project
         this.consultants.add(cons);
     }
 
+//adds consultant
     
     public void addConsultant(Consultant cons)
     {
         this.consultants.add(cons);
         
+        
+    }
+    
+    //develop funding arrangement
+    public void establish fundArrandgement(FundingArrangement fund)
+    {
         
     }
 }
