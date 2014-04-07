@@ -90,24 +90,32 @@ public class Project
     
     
     
-  // code added here  
+  //develop schedule
     public ProjectSchedule establishProjectSchedule()
     {
         // put your code here
         return new ProjectSchedule();
     }
+    
+    //develop budget
     public ProjectBudget establishProjectBudget()
     {
         // put your code here
         return new ProjectBudget();
     }
+    
+    //create document
     public void prepareDocument(){
         
         
     }
+    
+    //record monthly expenditure
     public void recordMonthlyExpenditureReport(){
         
     }
+    
+    //record quarterly expenditure
     public void recordQuarterlyProgressReport(){
         
     }
