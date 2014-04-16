@@ -53,7 +53,7 @@ public class Project
      * @param project name and project description
      * @return "Failure" or "success"
      */
-    public String addProject(String projectName, String projectDescription)
+    public String addProject(String projectName, String projectDescription, String sector)
     {
         if (user.hasAccess())
         {
