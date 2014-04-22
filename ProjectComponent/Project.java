@@ -18,6 +18,7 @@ public class Project
     public String projectName;
     public String sector; 
     public String projectDesciption;
+    public static ArrayList<String> act;
 
     //added 
     private ProjectBudget projectBudget;
@@ -35,7 +36,7 @@ public class Project
      * @param project name and projectDescription 
      * 
      */   
-    public Project(String projectName, String projectDescription,String sector, ArrayList act)
+    public Project(String projectName, String projectDescription,String sector, ArrayList<String> act)
     {
         //constructor code
         int min=1000;
@@ -45,6 +46,7 @@ public class Project
         projectName=projectName;
         projectDescription=projectDescription;
         sector=sector;
+        this.act = act;
     }
 
     
