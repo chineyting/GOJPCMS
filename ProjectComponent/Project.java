@@ -35,7 +35,7 @@ public class Project
      * @param project name and projectDescription 
      * 
      */   
-    public Project(String projectName, String projectDescription,String sector )
+    public Project(String projectName, String projectDescription,String sector, ArrayList act)
     {
         //constructor code
         int min=1000;
